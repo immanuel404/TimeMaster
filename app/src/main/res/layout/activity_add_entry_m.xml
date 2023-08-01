@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradientlist1"
+    tools:context=".AddEntryMActivity">
+
+    <TextView
+        android:id="@+id/lblPickImg2"
+        android:layout_width="194dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="184dp"
+        android:text="upload image"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imgupload2"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="76dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/clock" />
+
+    <TextView
+        android:id="@+id/lblgoal2"
+        android:layout_width="90dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="352dp"
+        android:layout_marginEnd="5dp"
+        android:text="*Goal (hrs):"
+        app:layout_constraintEnd_toStartOf="@+id/textView7"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/lblduration2"
+        android:layout_width="90dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="293dp"
+        android:layout_marginEnd="5dp"
+        android:text="*Duration:"
+        app:layout_constraintEnd_toStartOf="@+id/textView7"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/lbldate2"
+        android:layout_width="194dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="248dp"
+        android:text="Click here to pick date"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/lbldescription2"
+        android:layout_width="90dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="415dp"
+        android:layout_marginEnd="5dp"
+        android:text="*Description:"
+        app:layout_constraintEnd_toStartOf="@+id/textView7"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/lblcategory2"
+        android:layout_width="90dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="500dp"
+        android:layout_marginEnd="5dp"
+        android:text="*Category:"
+        app:layout_constraintEnd_toStartOf="@+id/textView7"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/lblrates2"
+        android:layout_width="90dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="564dp"
+        android:layout_marginEnd="5dp"
+        android:text="Set Rate:"
+        app:layout_constraintEnd_toStartOf="@+id/textView7"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txtmin2"
+        android:layout_width="65dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="344dp"
+        android:background="@drawable/round_border"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="min"
+        android:inputType="number"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/textView7"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txtpayrate2"
+        android:layout_width="65dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="556dp"
+        android:background="@drawable/round_border"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="pay/hr"
+        android:inputType="number"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/textView7"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txtmax2"
+        android:layout_width="65dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="344dp"
+        android:background="@drawable/round_border"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="max"
+        android:inputType="number"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/txtmin2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txttaxrate2"
+        android:layout_width="65dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="556dp"
+        android:background="@drawable/round_border"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="tax (%)"
+        android:inputType="number"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/txtpayrate2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/dropdown3"
+        android:layout_width="170dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="500dp"
+        app:layout_constraintStart_toEndOf="@+id/textView7"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txtstart2"
+        android:layout_width="65dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="288dp"
+        android:background="@drawable/round_border"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="00:00"
+        android:inputType="time"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/textView7"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txtend2"
+        android:layout_width="65dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="288dp"
+        android:background="@drawable/round_border"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="00:00"
+        android:inputType="time"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/txtstart2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnsubmit2"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="611dp"
+        android:background="@drawable/round_button"
+        android:text="Submit Entry"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:backgroundTint="#262E58"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txtdescription2"
+        android:layout_width="170dp"
+        android:layout_height="95dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="396dp"
+        android:background="@drawable/round_border"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="description"
+        android:inputType="textMultiLine"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/textView7"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="2dp"
+        android:layout_height="300dp"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="293dp"
+        android:text="TextView"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

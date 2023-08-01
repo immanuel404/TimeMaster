@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradientlist1"
+    tools:context=".HomeActivity">
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="80dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="94dp"
+        android:backgroundTint="#FF9800"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/baseline_home_24" />
+
+    <Button
+        android:id="@+id/btnCategory"
+        android:layout_width="160dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="268dp"
+        android:background="@drawable/round_button"
+        android:text="Add Category"
+        android:textColor="@color/white"
+        android:textSize="11sp"
+        app:backgroundTint="#262E58"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnManual"
+        android:layout_width="206dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="352dp"
+        android:background="@drawable/round_button"
+        android:text="Manual Entry"
+        android:textColor="@color/white"
+        app:backgroundTint="#262E58"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnAutomatic"
+        android:layout_width="206dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="424dp"
+        android:background="@drawable/round_button"
+        android:text="Automatic Entry"
+        android:textColor="@color/white"
+        app:backgroundTint="#262E58"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnViewEntry"
+        android:layout_width="280dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="532dp"
+        android:background="@drawable/round_button"
+        android:text="View My Entries"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:backgroundTint="#FF9800"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtLogout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="20dp"
+        android:text="logout"
+        android:textColor="@color/black"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

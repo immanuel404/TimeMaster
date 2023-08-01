@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradientlist1"
+    tools:context=".AddEntryAActivity">
+
+    <ImageView
+        android:id="@+id/imgupload"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="80dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/clock" />
+
+    <TextView
+        android:id="@+id/lblPickImg"
+        android:layout_width="190dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="184dp"
+        android:text="upload image"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/lblrates"
+        android:layout_width="90dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="592dp"
+        android:layout_marginEnd="5dp"
+        android:text="Set Rate:"
+        app:layout_constraintEnd_toStartOf="@+id/textView4"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txtpayrate"
+        android:layout_width="65dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="584dp"
+        android:background="@drawable/round_border"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="pay/hr"
+        android:inputType="number"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/textView4"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txttaxrate"
+        android:layout_width="65dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="584dp"
+        android:background="@drawable/round_border"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="tax (%)"
+        android:inputType="number"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/txtpayrate"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/lbltimer"
+        android:layout_width="250dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="218dp"
+        android:text="00 : 00 : 00"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="45sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/lbldescription"
+        android:layout_width="90dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="452dp"
+        android:layout_marginEnd="5dp"
+        android:text="*Description:"
+        app:layout_constraintEnd_toStartOf="@+id/textView4"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/dropdown2"
+        android:layout_width="170dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="536dp"
+        app:layout_constraintStart_toEndOf="@+id/textView4"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txtmin"
+        android:layout_width="65dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="396dp"
+        android:background="@drawable/round_border"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="min"
+        android:inputType="number"
+        app:layout_constraintStart_toEndOf="@+id/textView4"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/lblcategory"
+        android:layout_width="90dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="536dp"
+        android:layout_marginEnd="5dp"
+        android:text="*Category:"
+        app:layout_constraintEnd_toStartOf="@+id/textView4"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txtmax"
+        android:layout_width="65dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="396dp"
+        android:background="@drawable/round_border"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="max"
+        android:inputType="number"
+        app:layout_constraintStart_toEndOf="@+id/txtmin"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/lblgoal"
+        android:layout_width="90dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="404dp"
+        android:layout_marginEnd="5dp"
+        android:text="*Goal (hrs):"
+        app:layout_constraintEnd_toStartOf="@+id/textView4"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txtdescription"
+        android:layout_width="170dp"
+        android:layout_height="73dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="452dp"
+        android:background="@drawable/round_border"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="description"
+        android:inputType="textMultiLine"
+        app:layout_constraintStart_toEndOf="@+id/textView4"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnstart"
+        android:layout_width="100dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="293dp"
+        android:background="@drawable/round_button"
+        android:text="Start"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:backgroundTint="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnsubmit"
+        android:layout_width="310dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/round_button"
+        android:text="Submit Entry"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:backgroundTint="#262E58"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="2dp"
+        android:layout_height="280dp"
+        android:layout_marginStart="154dp"
+        android:layout_marginTop="357dp"
+        android:text="TextView"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
