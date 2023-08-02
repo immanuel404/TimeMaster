@@ -48,7 +48,7 @@ class HomeActivity : AppCompatActivity() {
 
         // GOOGLE SIGN-IN->SIGN-OUT
         val gso = GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
-            .requestIdToken("65299564117-hm48rmp09chs1rok7h2i74rih6ni0sfr.apps.googleusercontent.com")
+            .requestIdToken("")
             .requestEmail()
             .build()
         mGoogleSignInClient = GoogleSignIn.getClient(this, gso)
